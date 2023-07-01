@@ -7,7 +7,7 @@ import Project from './Components/Projects/Project';
 function App() {
   return (
     <div className="main">
-      <Router>
+      <Router basename='/portfolio'>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
