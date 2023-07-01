@@ -1,0 +1,73 @@
+import React from 'react'
+import picture1 from '../Components/Images/download.png'
+import './Navbar.css'
+
+export default function Navbar() {
+  return (
+    <div className='navbar'>
+      <img src={picture1} alt="" />
+      <div className="container1">
+        <p>Hello<br/><b>Select your address</b></p>
+      </div>
+      <div className="searchbar">
+        <button className='all'>All</button>
+        <input type="text" placeholder='Search Amazon.in'/>
+        <button className='search'>Search</button>
+      </div>
+      <div className="container1">
+        <p>Hello,sign in<br/><b>Accounts & Lists</b></p>
+      </div>
+      <div className="container1">
+        <p>Returns<br/><b>& Orders</b></p>
+      </div>
+      <div className="container1">
+        <p><b>Cart</b></p>
+      </div>
+    </div>
+  )
+}
+
+css
+
+.navbar{
+    display: flex;
+    height: 7vh;
+    align-items: center;
+}
+
+.navbar img{
+    height: 30px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.navbar .container1{
+    margin-left: 27px;     
+}
+
+.searchbar{
+    margin-left: 27px;
+}
+
+.searchbar input{
+    border-left : none;
+    border-right: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 3vh;
+    width: 62vw;
+}
+
+.searchbar button{
+    height: 3.4vh;
+}
+
+.all{
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid black;
+}
+
+.search{
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid black;
+}
