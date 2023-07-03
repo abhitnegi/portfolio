@@ -5,3 +5,10 @@
     height: 110vh;
     background-color: hsl(0, 0%, 13%);
 }
+
+@media only screen and (max-width: 650px) {
+    .project{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

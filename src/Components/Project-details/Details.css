@@ -16,3 +16,18 @@
 .responseItem h1{
     font-size: 6vh;
 }
+
+@media only screen and (max-width: 650px) {
+    .responseItem h1{
+        font-size: 4vh;
+    }
+
+    .responseItem p{
+        font-size: 2.5vh;
+    }
+
+    .responseItem img{
+        width: 80vw;
+        height: 20vh;
+    }
+}
