@@ -1,0 +1,18 @@
+.response{
+    color: white;
+}
+
+.responseItem{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.responseItem img{
+    width: 50vw;
+}
+
+.responseItem h1{
+    font-size: 6vh;
+}

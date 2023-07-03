@@ -1,0 +1,22 @@
+.projectItem{
+    width: 35vw;
+    height: 35vh;
+    text-align: center;
+}
+
+.projectItem img{
+    width: 30vw;
+}
+
+.projectItem h1{
+    font-size: 4vh;
+}
+
+.projectItem img:hover{
+    width: 32vw;
+    height: 32vh;
+}
+
+.projectList{
+    box-shadow: 5px 7px 5px 10px rgb(238, 89, 89);
+}

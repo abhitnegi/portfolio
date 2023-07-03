@@ -1,0 +1,7 @@
+.project{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    height: 110vh;
+    background-color: hsl(0, 0%, 13%);
+}
