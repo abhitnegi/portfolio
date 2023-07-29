@@ -1,0 +1,15 @@
+.contact{
+    display: flex;
+    color: white;
+    padding-left: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}

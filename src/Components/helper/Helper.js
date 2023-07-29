@@ -1,6 +1,7 @@
 import picture from '../Images/movie-finder.JPG'
 import picture1 from '../Images/coffee-ecommerce.JPG'
 import picture2 from '../Images/ecommerce-coffee.JPG'
+import picture3 from '../Images/Capture.JPG'
 
 export const project = [{
     name: "Movie-Finder",
@@ -36,4 +37,16 @@ export const project = [{
     cart: "with an easy add to cart option",
     develop: "Built an e-commerce website",
     link: "https://abhitnegi.github.io/ecommerce-coffee/"
+},
+{
+    name: "Food Ecommerce",
+    image: picture3,
+    skills: "HTML, CSS, REACT, FIREBASE, REDUX TOOLKIT",
+    thing: "food",
+    manage: "Redux Toolkit actions, reducers, slices and store",
+    additional: "Implemented a shopping cart feature using Redux Toolkit to manage the user selected items",
+    details: "Implemented authentication feature using Firebase",
+    cart: "with an easy add to cart option",
+    develop: "Built an food e-commerce website",
+    link: "https://abhitnegi.github.io/foodato/"
 },]
