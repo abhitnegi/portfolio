@@ -10,5 +10,6 @@
     .project{
         display: grid;
         grid-template-columns: auto;
+        height: auto;
     }
 }
