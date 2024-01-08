@@ -1,15 +1,22 @@
 .project{
     display: grid;
-    grid-template-columns: auto auto;
     justify-content: space-around;
-    height: 110vh;
-    background-color: hsl(0, 0%, 13%);
+    height: auto;
+    background-color: rgb(5, 5, 17);
+}
+
+@media only screen and (max-width: 750px) {
+    .project{
+        display: grid;
+        grid-template-columns: auto;
+    }
 }
 
 @media only screen and (max-width: 650px) {
     .project{
         display: grid;
         grid-template-columns: auto;
-        height: auto;
+        height: 170vh;
+        margin-top: 0;
     }
 }

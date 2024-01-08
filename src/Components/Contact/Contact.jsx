@@ -1,22 +1,29 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { EnvelopeSimple,InstagramLogo,Phone, LinkedinLogo } from 'phosphor-react'
 import './Contact.css'
 
 const Contact = () => {
+  const [ name, setName ] = useState("")
+  const [ email, setEmail ] = useState("")
+  const [ message, setMessage ] = useState("")
+
+  const setClick = () => {
+    if(name === "" || email === "" || message === ""){
+      alert("Invalid Name or Email or Message")
+    }
+    else{
+      alert("Thank you for contacting me")
+    }
+  }
   return (
     <div className='contact'>
-        <div className="mail">
-            <EnvelopeSimple size={32} className='envelope'/> : abhitnegi@gmail.com
-        </div>  
-        <div className="mail">
-            <InstagramLogo size={32} /> : kaunabhit
-        </div> 
-        <div className="mail">
-            <Phone size={32} /> : 91-9540026088
-        </div> 
-        <div className="mail">
-            <LinkedinLogo size={32} /> : Abhit Negi
-        </div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value={name} onChange={(e) => {setName(e.target.value)}}/><br />
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" value={email} onChange={(e) => {setEmail(e.target.value)}}/><br />
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" cols="30" rows="10" value={message} onChange={(e) => {setMessage(e.target.value)}}></textarea>
+        <input type="submit" value="Submit" id='submit' onClick={setClick}></input>
     </div>
   )
 }

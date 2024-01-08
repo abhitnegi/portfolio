@@ -11,8 +11,11 @@ const ProjectItem = (props) => {
           <Link to={`/project-details/${id}`}>
             <div className="projects">
                 <img src={value.image} alt="" />
-                <h1>{value.name}</h1>
-                <h2>{value.skills}</h2>
+                <div className="holder">
+                  <h1>{value.name}</h1>
+                  <h2>{value.skills}</h2>
+                  <b>Click to view details.....</b>
+                </div>
             </div>
           </Link>
         </div> 
